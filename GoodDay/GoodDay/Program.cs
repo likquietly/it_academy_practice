@@ -7,6 +7,7 @@ namespace GoodDay
         static void Main(string[] args)
         {
             {
+                Console.WriteLine($"{DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}");
                 if (DateTime.Now.Hour > 8 & DateTime.Now.Hour < 12)
                 {
                     Console.WriteLine("Good morning, guys");
@@ -24,5 +25,6 @@ namespace GoodDay
 
                 }
             }
+        }
     }
 }
