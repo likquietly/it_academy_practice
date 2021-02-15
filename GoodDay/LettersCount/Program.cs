@@ -17,7 +17,6 @@ namespace LettersCount
                 {
                     count++;
                 }
-               
             }
 
             Console.WriteLine($"The number of a or A is: {count}");

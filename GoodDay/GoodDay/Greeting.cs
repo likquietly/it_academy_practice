@@ -4,5 +4,6 @@ namespace GoodDay
 {
     class Greeting
     {
+
     }
 }
