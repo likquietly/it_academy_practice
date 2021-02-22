@@ -15,7 +15,7 @@ namespace Lecture._7.Task2
             userArr[1] = chr;
             userArr[2] = str;
 
-            foreach (var item in userArr)
+            foreach (object item in userArr)
             {
                 Console.WriteLine(item);
             }
