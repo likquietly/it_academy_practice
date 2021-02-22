@@ -20,13 +20,13 @@ namespace Lecture._7.Task2
                 Console.WriteLine(item);
             }
 
-            userArr[0] = userArr[0] + 10;
-            userArr[3] += ",guys";
+            //userArr[0] += 10;
+            //userArr[3] += ",guys";
 
-            foreach (var item in userArr)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in userArr)
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
     }
     }
