@@ -19,6 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Task3", "Lecture.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Task4", "Lecture.7.Task4\Lecture.7.Task4.csproj", "{CEF22E9A-EA91-4CF7-8D10-9179717647A5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{2240591F-8BEE-4CF2-916E-80C7AD800C06}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\OneDrive\Рабочий стол\box_unbox.png = ..\..\..\..\OneDrive\Рабочий стол\box_unbox.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
