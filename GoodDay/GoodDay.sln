@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodDay", "GoodDay\GoodDay.csproj", "{CFFE7A92-0F5A-4662-A6C0-FCC96FCBE2AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodDay", "GoodDay\GoodDay.csproj", "{CFFE7A92-0F5A-4662-A6C0-FCC96FCBE2AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LettersCount", "LettersCount\LettersCount.csproj", "{11E4E363-9222-40F9-97B7-672B7B574CB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LettersCount", "LettersCount\LettersCount.csproj", "{11E4E363-9222-40F9-97B7-672B7B574CB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture_5", "lecture_5", "{7372CA27-B587-4FD2-AD87-A3D8DBE1F728}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture_6", "lecture_6", "{C7665A2E-7712-40CD-81F5-B2E8AC9ECC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Task1", "Lecture.7.Task1\Lecture.7.Task1.csproj", "{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,18 @@ Global
 		{11E4E363-9222-40F9-97B7-672B7B574CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11E4E363-9222-40F9-97B7-672B7B574CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11E4E363-9222-40F9-97B7-672B7B574CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFFE7A92-0F5A-4662-A6C0-FCC96FCBE2AB} = {7372CA27-B587-4FD2-AD87-A3D8DBE1F728}
+		{11E4E363-9222-40F9-97B7-672B7B574CB0} = {7372CA27-B587-4FD2-AD87-A3D8DBE1F728}
+		{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8} = {C7665A2E-7712-40CD-81F5-B2E8AC9ECC67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5269EEFF-3B17-419F-B29C-A3F71294AE66}
