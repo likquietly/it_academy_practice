@@ -7,14 +7,13 @@ namespace Lecture._7.Task4
         static void Main(string[] args)
         {
             //boxing for short
-            short shr = 777;
+            short shr = 7;
             object obj = shr;
 
             //unboxing
-            object obj2 = 123;
-            sbyte sbt = (sbyte)obj2;
-
-            
+            sbyte sbt = 100;
+            object obj1 = sbt;
+            sbyte unboxSbt = (sbyte)obj1;
         }
     }
 }
