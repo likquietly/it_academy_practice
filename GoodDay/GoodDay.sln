@@ -11,20 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture_5", "lecture_5", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture_6", "lecture_6", "{C7665A2E-7712-40CD-81F5-B2E8AC9ECC67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Task1", "Lecture.7.Task1\Lecture.7.Task1.csproj", "{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lecture.7.Task1", "Lecture.7.Task1\Lecture.7.Task1.csproj", "{FE1D651E-104E-40D2-BD6A-D99F79BDB6C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Task2", "Lecture.7.Task2\Lecture.7.Task2.csproj", "{DE1EDA67-958F-4FC3-9368-EE47EA20C136}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lecture.7.Task2", "Lecture.7.Task2\Lecture.7.Task2.csproj", "{DE1EDA67-958F-4FC3-9368-EE47EA20C136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Task3", "Lecture.7.Task3\Lecture.7.Task3.csproj", "{0D7296B2-C6B8-4475-968B-0750F4B48E15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lecture.7.Task3", "Lecture.7.Task3\Lecture.7.Task3.csproj", "{0D7296B2-C6B8-4475-968B-0750F4B48E15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Task4", "Lecture.7.Task4\Lecture.7.Task4.csproj", "{CEF22E9A-EA91-4CF7-8D10-9179717647A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lecture.7.Task4", "Lecture.7.Task4\Lecture.7.Task4.csproj", "{CEF22E9A-EA91-4CF7-8D10-9179717647A5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{2240591F-8BEE-4CF2-916E-80C7AD800C06}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\OneDrive\Рабочий стол\box_unbox.png = ..\..\..\..\OneDrive\Рабочий стол\box_unbox.png
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture.7.Main", "Lecture.7.Main\Lecture.7.Main.csproj", "{C488BF19-5092-476A-827F-C826F8515CC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lecture.7.Main", "Lecture.7.Main\Lecture.7.Main.csproj", "{C488BF19-5092-476A-827F-C826F8515CC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
