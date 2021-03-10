@@ -16,10 +16,10 @@ namespace Motorcycle
 
         public Motorcycle()
         {
-            _model = "BMW";
+            _model = "MERC";
             _manufacturer = "Germany";
-            _year = 2021;
-            _mileage = 98;
+            _year = 2020;
+            _mileage = 58;
         }
 
         public string Model
