@@ -96,7 +96,7 @@ namespace Motorcycle
             Console.WriteLine("Factory reset");
         }
 
-        class Engine
+        public class Engine
         {
             private double _capacity;
             private double _power;
