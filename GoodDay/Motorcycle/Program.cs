@@ -79,29 +79,29 @@ namespace Motorcycle
             mass[5] = motoEngine.Power;
 
             object[] mass1 = new object[6];
-            mass[0] = moto1.Model;
-            mass[1] = moto1.Manufacturer;
-            mass[2] = moto1.Year;
-            mass[3] = moto1.Mileage;
-            mass[4] = motoEngine1.Сapacity;
-            mass[5] = motoEngine1.Power;
+            mass1[0] = moto1.Model;
+            mass1[1] = moto1.Manufacturer;
+            mass1[2] = moto1.Year;
+            mass1[3] = moto1.Mileage;
+            mass1[4] = motoEngine1.Сapacity;
+            mass1[5] = motoEngine1.Power;
 
             object[] mass2 = new object[6];
-            mass[0] = moto2.Model;
-            mass[1] = moto2.Manufacturer;
-            mass[2] = moto2.Year;
-            mass[3] = moto2.Mileage;
-            mass[4] = motoEngine2.Сapacity;
-            mass[5] = motoEngine2.Power;
+            mass2[0] = moto2.Model;
+            mass2[1] = moto2.Manufacturer;
+            mass2[2] = moto2.Year;
+            mass2[3] = moto2.Mileage;
+            mass2[4] = motoEngine2.Сapacity;
+            mass2[5] = motoEngine2.Power;
 
             Console.WriteLine($"1 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
-                , moto.Manufacturer, moto.Model, moto.Mileage, moto.Year, motoEngine.Сapacity, motoEngine.Power);
+                , mass[1], mass[0], mass[3], mass[2], mass[4], mass[5]);
 
             Console.WriteLine($"2 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
-                , moto1.Manufacturer, moto1.Model, moto1.Mileage, moto1.Year, motoEngine1.Сapacity, motoEngine1.Power);
+                , mass1[1], mass1[0], mass1[3], mass1[2], mass1[4], mass1[5]);
 
             Console.WriteLine($"3 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
-                , moto2.Manufacturer, moto2.Model, moto2.Mileage, moto2.Year, motoEngine2.Сapacity, motoEngine2.Power);
+                , mass2[1], mass2[0], mass2[3], mass2[2], mass2[4], mass2[5]);
         }
     }
 }
