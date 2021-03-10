@@ -9,10 +9,12 @@ namespace Motorcycle
     internal class Motorcycle
     {
         readonly Guid guid = Guid.NewGuid();
-        private string _model;
-        private string _manufacturer;
-        private int _year;
-        private double _mileage;
+        private string _model = "BMW";
+        private string _manufacturer = "Germany";
+        private int _year = 2021;
+        private double _mileage = 98;
+
+        Motorcycle()
 
         public string Model
         {
@@ -78,8 +80,12 @@ namespace Motorcycle
             get { return _mileage; }
         }
         
-        private void Meth()
+        private void Meth(Motorcycle moto)
         {
+            moto._model = _model;
+            moto._manufacturer = _manufacturer;
+            moto._year = _year;
+            moto._mileage = _mileage;
 
             Console.WriteLine("Factory reset");
         }
