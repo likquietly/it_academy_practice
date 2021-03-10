@@ -53,29 +53,55 @@ namespace Motorcycle
 
 
             Console.WriteLine("3 мотоцикл: Введите модель:");
-            moto.Model = Console.ReadLine();
+            moto2.Model = Console.ReadLine();
 
             Console.WriteLine("3 мотоцикл: Введите производителя:");
-            moto.Manufacturer = Console.ReadLine();
+            moto2.Manufacturer = Console.ReadLine();
 
             Console.WriteLine("3 мотоцикл: Введите год выпуска:");
-            moto.Year = Convert.ToInt32(Console.ReadLine());
+            moto2.Year = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("3 мотоцикл: Введите пробег:");
-            moto.Mileage = Convert.ToDouble(Console.ReadLine());
+            moto2.Mileage = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("3 мотоцикл: Введите объем:");
-            motoEngine.Сapacity = Convert.ToDouble(Console.ReadLine());
+            motoEngine2.Сapacity = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("3 мотоцикл: Введите мощность:");
-            motoEngine.Power = Convert.ToDouble(Console.ReadLine());
+            motoEngine2.Power = Convert.ToDouble(Console.ReadLine());
 
-            Motorcycle[] mass = new Motorcycle[4];
+            object[] mass = new object[6];
+            mass[0] = moto.Model;
+            mass[1] = moto.Manufacturer;
+            mass[2] = moto.Year;
+            mass[3] = moto.Mileage;
+            mass[4] = motoEngine.Сapacity;
+            mass[5] = motoEngine.Power;
 
-            for (int i = 0; i < Motorcycle.Length; i++)
-            {
+            object[] mass1 = new object[6];
+            mass[0] = moto1.Model;
+            mass[1] = moto1.Manufacturer;
+            mass[2] = moto1.Year;
+            mass[3] = moto1.Mileage;
+            mass[4] = motoEngine1.Сapacity;
+            mass[5] = motoEngine1.Power;
 
-            }
+            object[] mass2 = new object[6];
+            mass[0] = moto2.Model;
+            mass[1] = moto2.Manufacturer;
+            mass[2] = moto2.Year;
+            mass[3] = moto2.Mileage;
+            mass[4] = motoEngine2.Сapacity;
+            mass[5] = motoEngine2.Power;
+
+            Console.WriteLine($"1 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
+                , moto.Manufacturer, moto.Model, moto.Mileage, moto.Year, motoEngine.Сapacity, motoEngine.Power);
+
+            Console.WriteLine($"2 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
+                , moto1.Manufacturer, moto1.Model, moto1.Mileage, moto1.Year, motoEngine1.Сapacity, motoEngine1.Power);
+
+            Console.WriteLine($"3 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
+                , moto2.Manufacturer, moto2.Model, moto2.Mileage, moto2.Year, motoEngine2.Сapacity, motoEngine2.Power);
         }
     }
 }
