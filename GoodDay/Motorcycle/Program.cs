@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Motorcycle
 {
@@ -70,38 +71,35 @@ namespace Motorcycle
             Console.WriteLine("3 мотоцикл: Введите мощность:");
             motoEngine2.Power = Convert.ToDouble(Console.ReadLine());
 
-            object[] mass = new object[6];
-            mass[0] = moto.Model;
-            mass[1] = moto.Manufacturer;
-            mass[2] = moto.Year;
-            mass[3] = moto.Mileage;
-            mass[4] = motoEngine.Сapacity;
-            mass[5] = motoEngine.Power;
 
-            object[] mass1 = new object[6];
-            mass1[0] = moto1.Model;
-            mass1[1] = moto1.Manufacturer;
-            mass1[2] = moto1.Year;
-            mass1[3] = moto1.Mileage;
-            mass1[4] = motoEngine1.Сapacity;
-            mass1[5] = motoEngine1.Power;
+            List<Motorcycle> listMotorcycle = new List<Motorcycle>();
+            listMotorcycle.Add(moto);
 
-            object[] mass2 = new object[6];
-            mass2[0] = moto2.Model;
-            mass2[1] = moto2.Manufacturer;
-            mass2[2] = moto2.Year;
-            mass2[3] = moto2.Mileage;
-            mass2[4] = motoEngine2.Сapacity;
-            mass2[5] = motoEngine2.Power;
+            List<Motorcycle> listMotorcycle1 = new List<Motorcycle>();
+            listMotorcycle1.Add(moto1);
+
+            List<Motorcycle> listMotorcycle2 = new List<Motorcycle>();
+            listMotorcycle2.Add(moto2);
+
+
+            List<Motorcycle.Engine> listEngine = new List<Motorcycle.Engine>();
+            listEngine.Add(motoEngine);
+
+            List<Motorcycle.Engine> listEngine1 = new List<Motorcycle.Engine>();
+            listEngine1.Add(motoEngine1);
+
+            List<Motorcycle.Engine> listEngine2 = new List<Motorcycle.Engine>();
+            listEngine2.Add(motoEngine2);
+
 
             Console.WriteLine($"1 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
-                , mass[1], mass[0], mass[3], mass[2], mass[4], mass[5]);
+                , listMotorcycle[1], listMotorcycle[0], listMotorcycle[3], listMotorcycle[2], listEngine[0], listEngine[1]);
 
             Console.WriteLine($"2 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
-                , mass1[1], mass1[0], mass1[3], mass1[2], mass1[4], mass1[5]);
+                , listMotorcycle1[1], listMotorcycle1[0], listMotorcycle1[3], listMotorcycle1[2], listEngine1[0], listEngine1[1]);
 
             Console.WriteLine($"3 Мотоцикл(Производитель): {0}, Модель: {1}, Пробег: {2}, Год: {3}\nДвигатель(Объем): {4}, Мощность: {5}"
-                , mass2[1], mass2[0], mass2[3], mass2[2], mass2[4], mass2[5]);
+                , listMotorcycle2[1], listMotorcycle2[0], listMotorcycle2[3], listMotorcycle2[2], listEngine2[0], listEngine2[1]);
         }
     }
 }
