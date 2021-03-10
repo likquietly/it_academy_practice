@@ -14,7 +14,13 @@ namespace Motorcycle
         private int _year = 2021;
         private double _mileage = 98;
 
-        Motorcycle()
+        public Motorcycle()
+        {
+            _model = "BMW";
+            _manufacturer = "Germany";
+            _year = 2021;
+            _mileage = 98;
+        }
 
         public string Model
         {
