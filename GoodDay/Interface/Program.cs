@@ -8,20 +8,10 @@ namespace Interface
         static void Main(string[] args)
         {
             Circle circle = new(10);
-            double circleArea = circle.Area();
-
             Circle circle2 = new(15);
-            double circle2Area = circle2.Area();
-
             Square square = new(14.0);
-            double squareArea = square.Area();
-
             Triangle triangle = new(5, 8);
-            double triangleArea = triangle.Area();
-
             Triangle triangle2 = new(6, 9);
-            double triangle2Area = triangle2.Area();
-
 
             List<Object> listObj = new List<Object>();
             listObj.Add(circle);
@@ -32,7 +22,27 @@ namespace Interface
 
             foreach (var item in listObj)
             {
-                Console.WriteLine($"CLR Type is {item.GetType()} Square is {item.MyArea}");
+                Type type = item.GetType();
+                if (type == typeof(Circle))
+                {
+                    Circle tmp = (Circle)item;
+                    double areaTemp = tmp.Area();
+                    Console.WriteLine($"CLR Type is {tmp} Area is {areaTemp}");
+                }
+
+                if (type == typeof(Square))
+                {
+                    Square tmp = (Square)item;
+                    double areaTemp = tmp.Area();
+                    Console.WriteLine($"CLR Type is {tmp} Area is {areaTemp}");
+                }
+
+                if (type == typeof(Triangle))
+                {
+                    Triangle tmp = (Triangle)item;
+                    double areaTemp = tmp.Area();
+                    Console.WriteLine($"CLR Type is {tmp} Area is {areaTemp}");
+                }
             }
         }
     }

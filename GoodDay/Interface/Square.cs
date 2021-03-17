@@ -9,7 +9,6 @@ namespace Interface
     class Square : Figure
     {
         public double Side { get; set; }
-        public double MyArea { get; set; }
 
         public Square(double side)
         {
@@ -18,7 +17,7 @@ namespace Interface
 
         public override double Area()
         {
-            return MyArea = Side * Side;
+            return Side * Side;
         }
     }
 }
