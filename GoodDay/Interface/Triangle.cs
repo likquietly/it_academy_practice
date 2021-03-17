@@ -10,7 +10,7 @@ namespace Interface
     {
         public double Side { get; set; }
         public double Height { get; set; }
-
+        public double MyArea { get; set; }
 
         public Triangle(double side, double height)
         {
@@ -20,7 +20,8 @@ namespace Interface
 
         public override double Area()
         {
-            return 1/2 * Side * Height;
+            MyArea = 1 / 2 * Side * Height;
+            return MyArea;
         }
     }
 }

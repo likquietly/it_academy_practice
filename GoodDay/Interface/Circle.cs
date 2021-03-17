@@ -9,6 +9,8 @@ namespace Interface
     class Circle : Figure
     {
         public double Radius { get; set; }
+        public double MyArea { get; set; }
+
 
         public Circle(double radius)
         {
@@ -17,7 +19,7 @@ namespace Interface
 
         public override double Area()
         {
-            return Math.PI * Radius;
+            return MyArea = Math.PI * Radius;
         }
     }
 }

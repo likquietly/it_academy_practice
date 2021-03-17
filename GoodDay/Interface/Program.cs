@@ -32,7 +32,7 @@ namespace Interface
 
             foreach (var item in listObj)
             {
-                Console.WriteLine($"CLR Type is {item.GetType}");
+                Console.WriteLine($"CLR Type is {item.GetType()} Square is {item.MyArea}");
             }
         }
     }
