@@ -22,16 +22,17 @@ namespace Interface
             Triangle triangle2 = new(6, 9);
             double triangle2Area = triangle2.Area();
 
-            object[] mass = new object[5];
-            mass[0] = circle;
-            mass[1] = circle2;
-            mass[2] = square;
-            mass[3] = triangle;
-            mass[4] = triangle2;
 
-            foreach (var item in mass)
+            List<Object> listObj = new List<Object>();
+            listObj.Add(circle);
+            listObj.Add(circle2);
+            listObj.Add(square);
+            listObj.Add(triangle);
+            listObj.Add(triangle2);
+
+            foreach (var item in listObj)
             {
-                Console.WriteLine(Convert.ToDouble(item.Area));
+                Console.WriteLine($"CLR Type is {item.GetType}");
             }
         }
     }
