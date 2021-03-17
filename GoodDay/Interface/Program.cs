@@ -8,19 +8,19 @@ namespace Interface
         static void Main(string[] args)
         {
             Circle circle = new(10);
-            circle.Area();
+            double circleArea = circle.Area();
 
             Circle circle2 = new(15);
-            circle2.Area();
+            double circle2Area = circle2.Area();
 
             Square square = new(14.0);
-            square.Area();
+            double squareArea = square.Area();
 
             Triangle triangle = new(5, 8);
-            triangle.Area();
+            double triangleArea = triangle.Area();
 
             Triangle triangle2 = new(6, 9);
-            triangle2.Area();
+            double triangle2Area = triangle2.Area();
 
             object[] mass = new object[5];
             mass[0] = circle;
@@ -28,6 +28,11 @@ namespace Interface
             mass[2] = square;
             mass[3] = triangle;
             mass[4] = triangle2;
+
+            foreach (var item in mass)
+            {
+                Console.WriteLine(Convert.ToDouble(item.Area));
+            }
         }
     }
 }
