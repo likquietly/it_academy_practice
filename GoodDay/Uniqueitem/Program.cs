@@ -21,6 +21,16 @@ namespace Uniqueitem
             Uniqueitem.id = 2000;
             Uniqueitem item5 = new();
             Console.WriteLine(Uniqueitem.id);  //2001
+
+            Console.Write("Enter the id: ");
+            int id;
+            while(!Int32.TryParse(Console.ReadLine(), out id))
+            {
+                Console.WriteLine("Enter correct number!");
+            }
+
+            Uniqueitem item6 = new(id);
+            Console.WriteLine(Uniqueitem.id);
         }
     }
 }
