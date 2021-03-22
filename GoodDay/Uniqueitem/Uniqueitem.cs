@@ -2,17 +2,17 @@
 {
     class Uniqueitem
     {
-        public static int id = 0;
+        public static int Id { get; private set; }
 
         public Uniqueitem()
         {
-            id++;
+            Id++;
         }
 
         public Uniqueitem(int newId)
         {
-            id = newId;
-            id++;
+            Id = newId;
+            Id++;
         }
     }
 }

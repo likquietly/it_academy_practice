@@ -7,20 +7,19 @@ namespace Uniqueitem
         static void Main(string[] args)
         {
             Uniqueitem item1 = new();
-            Console.WriteLine("new id" + " " + Uniqueitem.id.ToString());  //1
+            Console.WriteLine("new id" + " " + Uniqueitem.Id.ToString());  //1
 
             Uniqueitem item2 = new();
-            Console.WriteLine("new id" + " " + Uniqueitem.id.ToString());  //2
+            Console.WriteLine("new id" + " " + Uniqueitem.Id.ToString());  //2
 
             Uniqueitem item3 = new(1000);
-            Console.WriteLine("new id" + " " + Uniqueitem.id.ToString());  //1001
+            Console.WriteLine("new id" + " " + Uniqueitem.Id.ToString());  //1001
 
             Uniqueitem item4 = new();
-            Console.WriteLine("new id" + " " + Uniqueitem.id.ToString());  //1002
+            Console.WriteLine("new id" + " " + Uniqueitem.Id.ToString());  //1002
 
-            Uniqueitem.id = 2000;
             Uniqueitem item5 = new();
-            Console.WriteLine("new id" + " " + Uniqueitem.id.ToString());  //2001
+            Console.WriteLine("new id" + " " + Uniqueitem.Id.ToString());  //1003
 
             Console.Write("Enter the id: ");
             int id;
@@ -30,7 +29,7 @@ namespace Uniqueitem
             }
 
             Uniqueitem item6 = new(id);
-            Console.WriteLine("new id" + " " + Uniqueitem.id.ToString());
+            Console.WriteLine("new id" + " " + Uniqueitem.Id.ToString());
         }
     }
 }
