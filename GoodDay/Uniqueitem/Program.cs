@@ -18,6 +18,7 @@ namespace Uniqueitem
             Uniqueitem item4 = new();
             Console.WriteLine(Uniqueitem.id);
 
+            Uniqueitem.id = 2000;
             Uniqueitem item5 = new();
             Console.WriteLine(Uniqueitem.id);
         }
