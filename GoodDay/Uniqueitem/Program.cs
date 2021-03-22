@@ -6,13 +6,19 @@ namespace Uniqueitem
     {
         static void Main(string[] args)
         {
-            Uniqueitem item1 = new(1000);
+            Uniqueitem item1 = new();
             Console.WriteLine(Uniqueitem.id);
 
             Uniqueitem item2 = new();
             Console.WriteLine(Uniqueitem.id);
 
-            Uniqueitem item3 = new();
+            Uniqueitem item3 = new(1000);
+            Console.WriteLine(Uniqueitem.id);
+
+            Uniqueitem item4 = new();
+            Console.WriteLine(Uniqueitem.id);
+
+            Uniqueitem item5 = new();
             Console.WriteLine(Uniqueitem.id);
         }
     }
