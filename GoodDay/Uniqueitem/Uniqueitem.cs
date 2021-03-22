@@ -18,6 +18,7 @@ namespace Uniqueitem
         public Uniqueitem(int newId)
         {
             id = newId;
+            id++;
         }
     }
 }
