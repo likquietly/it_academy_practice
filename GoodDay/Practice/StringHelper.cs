@@ -11,6 +11,10 @@ namespace Practice
                 str = str.Substring(0, 5);
                 str += "...";
             }
+            else
+            {
+                str += "...";
+            }
             return str;
         }
     }
