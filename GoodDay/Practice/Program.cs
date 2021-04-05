@@ -7,14 +7,31 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            //task 1
             string str = "Hello, world";
             string newStr = str.NewString();
             Console.WriteLine(newStr);
 
+            //task 2
             Type productType = typeof(Product);
-            Type ctorParam = typeof(string);
 
-            ConstructorInfo ctor = productType.GetTypeInfo().DeclaredConstructors.First(ctor => ctor.GetParametrs);
+            Console.WriteLine("Конструкторы:");
+            foreach (ConstructorInfo ctor in productType.GetConstructors())
+            {
+                Console.Write(productType.Name + " (");
+                // получаем параметры конструктора
+                ParameterInfo[] parameters = ctor.GetParameters();
+                for (int i = 0; i < parameters.Length; i++)
+                {
+                    Console.Write(parameters[i].ParameterType.Name + " " + parameters[i].Name);
+                    if (i + 1 < parameters.Length) Console.Write(", ");
+                }
+                Console.WriteLine(")");
+
+                object obj = ctor.Invoke(parameters);
+
+
+            }
         }
     }
 }
