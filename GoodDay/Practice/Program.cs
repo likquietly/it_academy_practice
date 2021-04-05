@@ -32,6 +32,9 @@ namespace Practice
 
                 FieldInfo fieldInfo = obj.GetType().GetTypeInfo().GetDeclaredField("_id");
                 fieldInfo.SetValue(obj, 999);
+
+                PropertyInfo propInfo = obj.GetType().GetTypeInfo().GetDeclaredProperty("Name");
+                propInfo.SetValue(obj, "Iphone 12 Pro");
             }
         }
     }
