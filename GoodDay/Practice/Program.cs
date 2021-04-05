@@ -31,13 +31,10 @@ namespace Practice
                 object obj = ctor.Invoke(parameters);
 
                 FieldInfo fieldInfo = obj.GetType().GetTypeInfo().GetDeclaredField("_id");
-                fieldInfo.SetValue(obj, 999);
+                fieldInfo.SetValue(obj, Guid.NewGuid());
 
                 PropertyInfo propInfo = obj.GetType().GetTypeInfo().GetDeclaredProperty("Name");
                 propInfo.SetValue(obj, "Iphone 12 Pro");
-
-                FieldInfo fieldInfo2 = obj.GetType().GetTypeInfo().GetDeclaredField("ProductType");
-                fieldInfo2.SetValue(obj, "TelePhone");
             }
         }
     }
