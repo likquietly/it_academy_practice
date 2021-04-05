@@ -35,6 +35,9 @@ namespace Practice
 
                 PropertyInfo propInfo = obj.GetType().GetTypeInfo().GetDeclaredProperty("Name");
                 propInfo.SetValue(obj, "Iphone 12 Pro");
+
+                FieldInfo fieldInfo2 = obj.GetType().GetTypeInfo().GetDeclaredField("ProductType");
+                fieldInfo2.SetValue(obj, "TelePhone");
             }
         }
     }
