@@ -30,7 +30,8 @@ namespace Practice
 
                 object obj = ctor.Invoke(parameters);
 
-
+                FieldInfo fieldInfo = obj.GetType().GetTypeInfo().GetDeclaredField("_id");
+                fieldInfo.SetValue(obj, 999);
             }
         }
     }
