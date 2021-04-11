@@ -31,7 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Inte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture_13", "lecture_13", "{846C0C4F-B993-40CC-955B-EC9EB60D0ACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniqueitem", "Uniqueitem\Uniqueitem.csproj", "{70AC51FD-0AC3-481D-914D-D9469B9D02B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uniqueitem", "Uniqueitem\Uniqueitem.csproj", "{70AC51FD-0AC3-481D-914D-D9469B9D02B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lecture_16", "lecture_16", "{6FDAE89D-CC60-4434-AFBE-344604405F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice.csproj", "{2E0F5A43-D3AC-41CB-B0F8-21FF85C8BB27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,10 @@ Global
 		{70AC51FD-0AC3-481D-914D-D9469B9D02B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70AC51FD-0AC3-481D-914D-D9469B9D02B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70AC51FD-0AC3-481D-914D-D9469B9D02B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0F5A43-D3AC-41CB-B0F8-21FF85C8BB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0F5A43-D3AC-41CB-B0F8-21FF85C8BB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0F5A43-D3AC-41CB-B0F8-21FF85C8BB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0F5A43-D3AC-41CB-B0F8-21FF85C8BB27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +102,7 @@ Global
 		{4FCCEB43-7C12-4867-95A8-5FF05736B562} = {22D28F5F-0B88-42D1-993C-675E923B663A}
 		{26A25624-E8D0-4495-9391-9B700CCCE0C0} = {804D2FF0-E8C4-4C47-B672-B442194FEDA2}
 		{70AC51FD-0AC3-481D-914D-D9469B9D02B0} = {846C0C4F-B993-40CC-955B-EC9EB60D0ACA}
+		{2E0F5A43-D3AC-41CB-B0F8-21FF85C8BB27} = {6FDAE89D-CC60-4434-AFBE-344604405F88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5269EEFF-3B17-419F-B29C-A3F71294AE66}
