@@ -43,6 +43,7 @@
             {
                 if (motoDel(moto))
                     result = moto;
+                else result = default(Motorcycle);
             }
             return result;
         }
