@@ -14,6 +14,7 @@
             arr[4] = new Motorcycle { Model = "Honda CB1100RR", MadeIn = "Japan", Odometer = 26_000 };
 
             Motorcycle moto = new();
+
             moto = FirstOrDefault(arr, ValueOdometr);
             moto = FirstOrDefault(arr, MadeIn);
             moto = FirstOrDefault(arr, OdometrMadeIn);
@@ -34,7 +35,7 @@
             return moto.MadeIn.Equals("Japan") && moto.Odometer >= 25_000;
         }
 
-        public Motorcycle FirstOrDefault(Motorcycle[] arr, MyDelegateMotorcycle motoDel)
+        public static Motorcycle FirstOrDefault(Motorcycle[] arr, MyDelegateMotorcycle motoDel)
         {
             var result = new Motorcycle();
 
